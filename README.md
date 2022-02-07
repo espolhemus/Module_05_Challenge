@@ -12,9 +12,9 @@ The results of our Analysis of the data is as follows:
 
 - The key metrics associated with our analysis of the PyBer data are:
     
-![Summary Data Frame](/Images/DataFrame_Image.png)
+![Summary Data Frame](/Analysis/DataFrame_Image.png)
 
-![Fares by City Type](/Images/PyBer_fare_summary.png)
+![Fares by City Type](/Analysis/PyBer_fare_summary.png)
 
 - For the period of time analyzed, within the cities for which data was provided, PyBer completed a total of 2,375 rides, with 2,973 drivers active within the platform.  The sum total of fares for the given period was $63,538.64; $4,327.93 associated with fares in Rural markets (6.81% of total fare revenue), $19,356.33 associated with fares in Suburban markets (30.46% of total fare revenue), and $39,854.38 associated with fares in Urban markets (62.72% of total fare revenue).
 
@@ -35,4 +35,8 @@ Based on our analysis, we would suggest that the company consider the following 
 
 ### Focus on Driving Growth in Suburban Markets
 
-  - Rides in Suburban markets accounted for 30.46% of Total Fares during the period, while only accounting for only 26.32% of Total Rides during the period, whereas rides within Urban markets accounted for only 62.72% of Total Fares during the period, while comprising 68.42% of Total Rides during the period.  Therefore, we would suggest that focusing on increasing ride growth within Suburban markets will deliver the greatest return on overall Fare Revenue. 
+  - Rides in Suburban markets accounted for 30.46% of Total Fares during the period, while only accounting for only 26.32% of Total Rides during the period, whereas rides within Urban markets accounted for only 62.72% of Total Fares during the period, while comprising 68.42% of Total Rides during the period.  Therefore, we would suggest that focusing on increasing ride growth within Suburban markets will deliver the greatest return on overall Fare Revenue.
+
+### Rides per Driver Metrics
+
+  - For the period of time analyzed, Rural markets had a mean of 1.60 Rides per Driver, Suburban markets had a mean of 1.28 Rides per Driver, and Urban markets had a mean of 0.68 Rides per Driver; in order to grow fare revenue, it will be necessary to better understand why there is such a wide discrepancy among the various City Types.  
