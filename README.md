@@ -5,96 +5,34 @@ Module 05 Challenge - Ride Sharing Data Analysis
 Module 5 Challenge. This project involves using Jupyter Notebooks, pandas, and matplotlib to import, manipulate, analyze and present visualizations of various data related to the business of PyBer, a ride sharing company.
 
 ### Purpose
-The purpose of this challenge is to take a CSV file containing data related to the cities in which the company operates and a CSV file relating to individual rides completed using the company's platform, clean the data as necessary, and then use pandas and matplotlib to calculate relevant statistics related to the various types of markets in which the company operates (classifed as "Urban", "Suburban", and "Rural"), to create a visualization illustrating the performance of the types of markets in relation to one another, and to make recommendations based on any disparities observed between the various types of cities
+The purpose of this challenge is to take one CSV file containing data related to the cities in which the company operates and a second CSV file relating to the individual rides completed using the company's platform, clean the data as necessary, and then use pandas and matplotlib to calculate relevant statistics related to the types of markets in which the company operates (classified as "Urban", "Suburban", and "Rural"), to create a visualization illustrating the performance of the each of the market segments in relation to one another, and to make recommendations based on any disparities observed between the various types of cities
 
-## Results
+## Summary of Results
 The results of our Analysis of the data is as follows:
 
-### Urban Driver Count Surplus:
-
-  - As illustrated by the following image, for the period of time analyzed, there were 780 drivers in Urban cities who did not complete at least one trip with Pyber; this has a significant impact on the "Average Fare per Driver" values.
-
-    - Original Data Set, Containing Performance Data for THS 9th Grade Students:
+- The key metrics associated with our analysis of the PyBer data are:
     
-    ![District Summary Including THS 9th Graders](/Images/District_Summary_Inc_THS_9th_Grade_Scores.png)
-    
-    - Revised Data Set, Excluding Performance Data for THS 9th Grade Students: 
+![Summary Data Frame](/Images/DataFrame_Image.png)
 
-    ![District Summary Excluding THS 9th Graders](/Images/District_Summary_Ex_THS_9th_Grade_Scores.png)
+![Fares by City Type](/Images/PyBer_fare_summary.png)
 
-### Impact on the Exclusion of 9th Grade Student Data on Overall Results of Thomas High School:
+- For the period of time analyzed, within the cities for which data was provided, PyBer completed a total of 2,375 rides, with 2,973 drivers active within the platform.  The sum total of fares for the given period was $63,538.64; $4,327.93 associated with fares in Rural markets (6.81% of total fare revenue), $19,356.33 associated with fares in Suburban markets (30.46% of total fare revenue), and $39,854.38 associated with fares in Urban markets (62.72% of total fare revenue).
 
-  - Likewise, as demonstrated by the following images of the summary data for Thomas High School, the exclusion of data for 9th Grade Students had a negligible effect on the Overall Performance of the Campus.  The exclusion of data related to 9th Grade Students had no impact on Average Math Scores for the Campus, and resulted in an increase of 0.1% in the Average Reading Score; the percentage of Thomas High School students Passing Math, Passing Reading, and the Overall Passing rate were not impacted by the exclusion of the 9th Grade data. 
+- The Average Fare per Ride in Rural markets was $34.62, the Average Fare per Ride in Suburban markets was $30.97, and the Average Fare per Ride in Urban markets was $24.53.    
 
-    - Thomas High School Summary, Containing Performance Data for 9th Grade Students:
-    
-    ![School Summary Including THS 9th Graders](/Images/THS_Summary_Including_9th_Grade_Scores.png)
-    
-    - Thomas High School Summary, Excluding Performance Data for 9th Grade Students: 
+- The Average Fare per Driver in Rural markets was $55.49, the Average Fare per Driver in Suburban markets was $39.50, and the Average Fare per Drver in Urban markets was $16.57.
 
-    ![School Summary Excluding THS 9th Graders](/Images/THS_Summary_Excluding_9th_Grade_Scores.png)
+## Business Recommendations
+Based on our analysis, we would suggest that the company consider the following recommendations:
 
-### Performance of Thomas High School Relative to Other Schools:
+### Urban Driver Count
 
-  - With respect to the Performance of Thomas High School relative to other schools within the district, the exclusion of data for 9th Grade Students did not have a material effect on the stack rankings of schools, as based on Overall Passing Percentage; however, in the categories of Average Math Score, and the Percentage of Students Passing Reading, the performance of Griffin High School now exceeds that of Thomas High School, and the difference in Overall Passing Percentage narrowed significantly, from nearly 0.5% to only 0.05%. . 
+  - As illustrated by in the data frame image presented in the Summary of Results, for the period of time analyzed, it is likely that there were at least 780 drivers in Urban cities who did not complete at least one trip with Pyber; not only is this potentially an opportunity to drive incremental revenue growth, but this has a significant impact on the "Average Fare per Driver" values, and efforts should be undertaken to understand why the number of drivers exceeds the number of trips completed by such a wide margin.
 
-    - Stack Rankings, According to Overall Passing Percentage, Containing Performance Data for THS 9th Grade Students:
-    
-    ![Stack Rankings Including THS 9th Graders](/Images/School_Stack_Rankings_Inc_THS_9th_Grade_Scores.png)
-    
-    - Stack Rankings, According to Overall Passing Percentage, Containing Performance Data for THS 9th Grade Students: 
+### Lack of Granularity in Data
 
-    ![Stack Rankings Excluding THS 9th Graders](/Images/School_Stack_Rankings_Ex_THS_9th_Grade_Scores.png)      
+  - In order to provide the most useful insights, it would be extremely helpful if the ride-level data that we are provided with included a field identifying the driver associated with a particular ride; this will enable us to provide much more useful summary statistics, and to potentially identify ways in which the current summary data may not be truly representative of the experience of drivers partnering with the company.
 
-### Impact on Other Categorizations:
+### Focus on Driving Growth in Suburban Markets
 
-The exclusion of performance data for 9th Grade Students at Thomas High School did not have a material impact on any of the other categories by which data was analyzed, including: 
-
-  - Math Scores by Grade:
-       - Including Thomas High School 9th Graders:
-       
-      ![Math Scores by Grade Including THS 9th Graders](/Images/Math_Scores_Inc_THS_9th_Grade_Scores.png)
-    
-       - Excluding Thomas High School 9th Graders:
-       
-      ![Math Scores by Grade Excluding THS 9th Graders](/Images/Math_Scores_Ex_THS_9th_Grade_Scores.png)
-      
-  - Reading Scores by Grade:
-       - Including Thomas High School 9th Graders:
-       
-      ![Reading Scores by Grade Including THS 9th Graders](/Images/Reading_Scores_Inc_THS_9th_Grade_Scores.png)
-    
-       - Excluding Thomas High School 9th Graders:
-       
-      ![Reading Scores by Grade Including THS 9th Graders](/Images/Reading_Scores_Ex_THS_9th_Grade_Scores.png)
-  
-  - Scores by Per Student Spending Levels (Thomas High School is Within the ($630 - $644) Bin):
-       - Including Thomas High School 9th Graders:
-       
-      ![Scores by Funding Level Including THS 9th Graders](/Images/Scores_Spending_Inc_THS_9th_Grade_Scores.png)
-    
-       - Excluding Thomas High School 9th Graders:
-       
-      ![Scores by Funding Level Excluding THS 9th Graders](/Images/Scores_Spending_Ex_THS_9th_Grade_Scores.png)
-      
-  - Scores by School Type (Thomas High School being a Charter School):
-       - Including Thomas High School 9th Graders:
-       
-      ![Scores by School Type Including THS 9th Graders](/Images/Scores_School_Type_Inc_THS_9th_Grade_Scores.png)
-    
-       - Excluding Thomas High School 9th Graders:
-       
-      ![Scores by School Type Excluding THS 9th Graders](/Images/Scores_School_Type_Ex_THS_9th_Grade_Scores.png)
-      
-   - Scores by School Size (Thomas High School being Classified as "Medium"):
-       - Including Thomas High School 9th Graders:
-       
-      ![Scores by School Size Including THS 9th Graders](/Images/Scores_School_Size_Inc_THS_9th_Grade_Scores.png)
-    
-       - Excluding Thomas High School 9th Graders:
-       
-      ![Scores by School Size Excluding THS 9th Graders](/Images/Scores_School_Size_Ex_THS_9th_Grade_Scores.png)
-    
-## Summary
-
-The exclusion of Performance Data for 9th Grade Students at Thomas High School had a negligible impact on the performance of the District overall, and did not have a material impact of the performance of Thomas High School as a whole or in relation to the other schools within the district.  The exclusion of data related to THS 9th Grade Students resulted in overall Average Math Scores for the district declining by 0.1%, but had no impact on the Average Reading Score; the percentage of District students Passing Math declined by 0.2%, and the percentage of District Students Passing Reading declined by 0.1%.  Excluding THS 9th Grade Students from the analysis resulted in a decline in the Overall Passing Percentage of 0.3%.
+  - Rides in Suburban markets accounted for 30.46% of Total Fares during the period, while only accounting for only 26.32% of Total Rides during the period, whereas rides within Urban markets accounted for only 62.72% of Total Fares during the period, while comprising 68.42% of Total Rides during the period.  Therefore, we would suggest that focusing on increasing ride growth within Suburban markets will deliver the greatest return on overall Fare Revenue. 
